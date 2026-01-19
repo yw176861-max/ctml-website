@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CTML | Assessment</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="brand">
+    <h1>CTML <span class="badge">Assessment</span></h1>
+    <p>CTML in Educational Video</p>
+  </div>
+  <nav class="nav">
+    <a href="index.html">Home</a>
+    <a href="learning-objectives.html">Learning Objectives</a>
+    <a href="author.html">Author</a>
+    <a href="introduction.html">Introduction</a>
+    <a href="key-elements.html">Key Elements</a>
+    <a href="cognitive-load.html">Cognitive Load Theory</a>
+    <a href="principles.html">12 Principles</a>
+    <a href="educational-video.html">Educational Video</a>
+    <a href="application.html">Application</a>
+    <a class="active" href="assessment.html">Assessment</a>
+    <a href="resources.html">Resources</a>
+    <a href="additional.html">Additional</a>
+  </nav>
+</header>
+
+<main class="container">
+  <section class="main">
+    <h2>CTML Short Quiz (10 Questions)</h2>
+    <p>Select the best answer. Click <b>Submit</b> to see your score.</p>
+
+    <form id="quizForm" class="quiz" onsubmit="event.preventDefault(); scoreQuiz();">
+      <fieldset class="q">
+        <legend>1) Dual channels means learners process information through…</legend>
+        <label><input type="radio" name="q1" value="a"> a) one channel only</label>
+        <label><input type="radio" name="q1" value="b"> b) visual/pictorial and auditory/verbal channels</label>
+        <label><input type="radio" name="q1" value="c"> c) memory and emotion channels</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>2) Limited capacity suggests…</legend>
+        <label><input type="radio" name="q2" value="a"> a) learners can process unlimited information</label>
+        <label><input type="radio" name="q2" value="b"> b) only visuals can overload learners</label>
+        <label><input type="radio" name="q2" value="c"> c) each channel has limited processing capacity</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>3) Active processing involves…</legend>
+        <label><input type="radio" name="q3" value="a"> a) selecting, organizing, integrating</label>
+        <label><input type="radio" name="q3" value="b"> b) copying text word-for-word</label>
+        <label><input type="radio" name="q3" value="c"> c) memorizing without understanding</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>4) Coherence principle recommends…</legend>
+        <label><input type="radio" name="q4" value="a"> a) add more decorative images</label>
+        <label><input type="radio" name="q4" value="b"> b) remove extraneous material</label>
+        <label><input type="radio" name="q4" value="c"> c) add background music to all parts</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>5) Signaling principle is about…</legend>
+        <label><input type="radio" name="q5" value="a"> a) using long paragraphs</label>
+        <label><input type="radio" name="q5" value="b"> b) avoiding headings</label>
+        <label><input type="radio" name="q5" value="c"> c) highlighting what learners should focus on</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>6) Redundancy principle warns against…</legend>
+        <label><input type="radio" name="q6" value="a"> a) narration + graphics + identical onscreen text</label>
+        <label><input type="radio" name="q6" value="b"> b) narration + visuals</label>
+        <label><input type="radio" name="q6" value="c"> c) using pictures at all</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>7) Spatial contiguity suggests…</legend>
+        <label><input type="radio" name="q7" value="a"> a) separate labels far away from diagrams</label>
+        <label><input type="radio" name="q7" value="b"> b) place related text near relevant visuals</label>
+        <label><input type="radio" name="q7" value="c"> c) avoid labels</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>8) Temporal contiguity means…</legend>
+        <label><input type="radio" name="q8" value="a"> a) show visuals only after narration finishes</label>
+        <label><input type="radio" name="q8" value="b"> b) explain first, animate later</label>
+        <label><input type="radio" name="q8" value="c"> c) present corresponding narration and visuals together</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>9) Segmenting principle recommends…</legend>
+        <label><input type="radio" name="q9" value="a"> a) breaking content into learner-friendly chunks</label>
+        <label><input type="radio" name="q9" value="b"> b) one long continuous video without pauses</label>
+        <label><input type="radio" name="q9" value="c"> c) removing all transitions</label>
+      </fieldset>
+
+      <fieldset class="q">
+        <legend>10) Modality principle suggests for complex material…</legend>
+        <label><input type="radio" name="q10" value="a"> a) lots of printed text on the screen</label>
+        <label><input type="radio" name="q10" value="b"> b) narration with visuals can be better than printed text with visuals</label>
+        <label><input type="radio" name="q10" value="c"> c) avoid narration completely</label>
+      </fieldset>
+
+      <div class="btnRow">
+        <button type="submit">Submit</button>
+        <button type="button" onclick="resetQuiz()">Reset</button>
+      </div>
+    </form>
+
+    <div id="resultBox" class="result" style="margin-top:12px;">Result will appear here after you submit.</div>
+  </section>
+
+  <footer class="footer">
+    <span>Next: <a href="resources.html"><b>Resources</b></a></span>
+    <span><a href="index.html">Back to Home</a></span>
+  </footer>
+</main>
+
+<script src="quiz.js"></script>
+</body>
+</html>
