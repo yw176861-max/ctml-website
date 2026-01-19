@@ -151,3 +151,27 @@ button:hover{background:rgba(122,167,255,.22)}
 @media (max-width: 760px){
   .twoCol{grid-template-columns:1fr}
 }
+.hero{
+  text-align: center;
+  padding: 26px 16px;
+}
+
+.hero-img{
+  width: 92%;
+  max-width: 950px;
+  display: block;
+  margin: 16px auto 0;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(0,0,0,.12);
+}
+
+.page-img{
+  width: 100%;
+  max-width: 760px;
+  display: block;
+  margin: 16px auto;
+  border-radius: 16px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.10);
+}
+
+
